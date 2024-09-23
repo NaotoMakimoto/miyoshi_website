@@ -1,0 +1,152 @@
+body {
+    overflow: scroll; 
+    font-size: 1.1rem;
+}
+  
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ヘッダー */
+header {
+    background: #089416;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: white 3px solid;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* トップ画面 */
+#showcase {
+    width: 100vw;
+    height: 70vh;
+    background-image: url('../img/top-image2.png');
+    background-size: cover; /* containに変更して、画像全体が表示されるように */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+#showcase h1 {
+    position: absolute;
+    font-size: 5vw;
+    right: 10%;
+    bottom: 15%;
+}
+#main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main .box {
+    margin-bottom: 20px;
+    background: #edf9ed;
+    padding: 20px;
+}
+
+.tel {
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+/* 保有資格 */
+.license-table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.license-table td {
+    border: #ccc 1.4px solid;
+    padding: 0.2rem 0 0.2rem 0.8rem;
+}
+
+
+
+/* スライダー */
+.slider {
+    width: 80vw;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.slider-track img {
+    width: 25vw;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #089416;
+    text-align: center;
+}
