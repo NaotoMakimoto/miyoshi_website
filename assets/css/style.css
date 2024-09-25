@@ -81,7 +81,7 @@ header a:hover {
 #showcase h1 {
     position: absolute;
     font-size: 5vw; 
-    right: 10%;
+    right: 5%;
     bottom: 15%; 
     @media screen and (max-width: 450px) {
         font-size: 2rem;
@@ -109,23 +109,62 @@ header a:hover {
 }
 
 h2 {
-    font-size: 1.3rem;
-}
-
-/* 保有資格 */
-.license-table {
-    width: 80%;
-    margin: 0 auto;
+    font-size: 2rem;
     @media screen and (max-width: 450px) {
-        width: 100%;
+        font-size: 1.5rem;
     }
 }
 
-.license-table td {
-    border: #ccc 1.4px solid;
-    padding: 0.2rem 0 0.2rem 0.8rem;
-
+p {
+    font-size: 1.5rem;
+    @media screen and (max-width: 450px) {
+        font-size: 1rem;
+    }
 }
+
+/* トップコンテナ */
+.top-container {
+    margin: 5vh 0;
+}
+
+.top-container h1 {
+    font-size: 3.5rem;
+    @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+    }
+}
+
+.top-container p {
+    margin-top: 2rem;
+}
+
+/* 会社概要はこちら */
+.information-box{
+    height: 20vh;
+    background-image: url(../img/kaitai9.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.information-box a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+    }
+    position: absolute;
+    left: 5%;
+    bottom: 0;   
+}
+
+.information-box a:hover {
+    color: #888;
+}
+
 
 
 
@@ -153,7 +192,7 @@ h2 {
 }
 
 .slider-track img {
-    width: 25vw;
+    width: 25vw ;
     height: auto;
     margin-right: 10px;
     @media screen and (max-width: 450px) {
@@ -170,3 +209,56 @@ footer {
     background-color: #089416;
     text-align: center;
 }
+
+
+/* 会社概要 */
+
+.corporate-table {
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
+}
+
+.corporate-table td {
+    border: #ccc 1.4px solid;
+    padding: 0.2rem 0 0.2rem 0.8rem;
+
+}
+
+/* 保有資格 */
+.license-table {
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
+}
+
+.license-table td {
+    border: #ccc 1.4px solid;
+    padding: 0.2rem 0 0.2rem 0.8rem;
+
+}
+
+
+
+
+/* お問い合わせ */
+.contact-box h1 {
+    font-size: 2rem;
+}
+
+/* .contact-box p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+#tel-box {
+    margin-top: 5vh;
+}
+
+#tel-box p{
+    font-size: 2.5rem;
+} */
