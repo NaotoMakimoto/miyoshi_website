@@ -54,7 +54,7 @@ header #branding {
 }
 header #branding h1 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
 }
 header nav {
     float: right;
@@ -67,7 +67,6 @@ header a:hover {
 }
 
 /* ハンバーガー */
-/* ハンバーガーの初期スタイル */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -211,6 +210,14 @@ p {
     }
 }
 
+@media (max-width: 450px) {
+    .mobile-break::after {
+        content: "\A"; /* 改行を追加 */
+        white-space: pre; /* 改行を有効にする */
+    }
+}
+
+
 .top-container p {
     margin-top: 2rem;
 }
@@ -319,6 +326,9 @@ footer {
 .contact-box h1 {
     font-size: 2rem;
     margin-top: 3vh;
+    @media screen and (max-width: 450px) {
+        font-size: 1.4rem;
+    }
 }
 
 .contact-box p {
