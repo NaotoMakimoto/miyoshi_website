@@ -30,6 +30,7 @@ header {
     padding-top: 30px;
     min-height: 70px;
     border-bottom: white 3px solid;
+    position: relative;
 }
 header a {
     color: #ffffff;
@@ -64,6 +65,80 @@ header a:hover {
     color: #ffffff;
     font-weight: bold;
 }
+
+/* ハンバーガー */
+/* ハンバーガーの初期スタイル */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    right: 5%;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out; /* スムーズなアニメーション */
+}
+
+/* ハンバーガーをクリックしたときの変形スタイル */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px); /* 角度と移動調整 */
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0; /* 中央の線を非表示に */
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px); /* 角度と移動調整 */
+}
+
+@media (max-width: 450px) {
+    header {
+        min-height: 51px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    header #branding h1 {
+        font-size: 1.5rem;
+        margin: auto 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #089416;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+        color: white;
+    }
+}
+
 
 
 
@@ -213,54 +288,55 @@ footer {
 }
 
 
+
+/* -----informationページ -----------------------*/
 /* 会社概要 */
 
 .corporate-table {
     width: 80%;
     margin: 0 auto;
+    
     @media screen and (max-width: 450px) {
         width: 100%;
     }
+
 }
 
 .corporate-table td {
     border: #ccc 1.4px solid;
     padding: 0.2rem 0 0.2rem 0.8rem;
-
-}
-
-/* 保有資格 */
-.license-table {
-    width: 80%;
-    margin: 0 auto;
+    font-size: 1.5rem;
     @media screen and (max-width: 450px) {
-        width: 100%;
+        font-size: 0.85rem;
     }
 }
 
-.license-table td {
-    border: #ccc 1.4px solid;
-    padding: 0.2rem 0 0.2rem 0.8rem;
-
-}
 
 
 
-
+/* ----------contactページ----------------------- */
 /* お問い合わせ */
 .contact-box h1 {
     font-size: 2rem;
+    margin-top: 3vh;
 }
 
-/* .contact-box p {
-    font-size: 2rem;
-    line-height: 2;
+.contact-box p {
+    margin-top: 2vh;
 }
 
 #tel-box {
+    margin-top: 3vh;
+}
+
+.insta {
     margin-top: 5vh;
 }
 
-#tel-box p{
-    font-size: 2.5rem;
-} */
+.insta h4 {
+    font-size: 1.5rem;
+}
+
+.insta p {
+    margin:1vh 0 2vh 0;
+}
