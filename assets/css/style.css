@@ -84,20 +84,19 @@ header a:hover {
     width: 100%;
     height: 3px;
     background-color: white;
-    transition: all 0.3s ease-in-out; /* スムーズなアニメーション */
+    transition: all 0.3s ease-in-out; 
 }
 
-/* ハンバーガーをクリックしたときの変形スタイル */
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px); /* 角度と移動調整 */
+    transform: rotate(45deg) translate(6px, 6px); 
 }
 
 .hamburger.active span:nth-child(2) {
-    opacity: 0; /* 中央の線を非表示に */
+    opacity: 0; 
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px); /* 角度と移動調整 */
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 @media (max-width: 450px) {
@@ -139,16 +138,16 @@ header a:hover {
 }
 
 
-
+/* ----------メインページ------------------ */
 
 /* トップ画面 */
 #showcase {
     width: 100vw;
     height: 70vh;
-    background-image: url('../img/top-image2.png');
-    background-size: cover; /* containに変更して、画像全体が表示されるように */
-    background-position: center; /* 画像を中央に配置 */
-    background-repeat: no-repeat; /* 繰り返さない */
+    background-image: url('../img/top-image.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
     text-align: center;
     color: #ffffff;
     position: relative;
@@ -180,8 +179,16 @@ header a:hover {
 }
 
 .tel {
-    font-size: 1.5rem;
-    /* text-align: center; */
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    @media screen and (max-width: 450px) {
+        font-size: 1.5rem;
+    }
+}
+
+#tel:hover {
+    color: #888;
 }
 
 h2 {
@@ -212,8 +219,8 @@ p {
 
 @media (max-width: 450px) {
     .mobile-break::after {
-        content: "\A"; /* 改行を追加 */
-        white-space: pre; /* 改行を有効にする */
+        content: "\A"; 
+        white-space: pre; 
     }
 }
 
@@ -225,7 +232,7 @@ p {
 /* 会社概要はこちら */
 .information-box{
     height: 20vh;
-    background-image: url(../img/kaitai9.png);
+    background-image: url(../img/back-image.png);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -248,8 +255,6 @@ p {
 .information-box a:hover {
     color: #888;
 }
-
-
 
 
 /* スライダー */
@@ -276,7 +281,7 @@ p {
 }
 
 .slider-track img {
-    width: 25vw ;
+    width: 19vw ;
     height: auto;
     margin-right: 10px;
     @media screen and (max-width: 450px) {
@@ -294,11 +299,9 @@ footer {
     text-align: center;
 }
 
-
-
 /* -----informationページ -----------------------*/
-/* 会社概要 */
 
+/* 会社概要 */
 .corporate-table {
     width: 80%;
     margin: 0 auto;
@@ -306,7 +309,6 @@ footer {
     @media screen and (max-width: 450px) {
         width: 100%;
     }
-
 }
 
 .corporate-table td {
@@ -319,9 +321,8 @@ footer {
 }
 
 
-
-
 /* ----------contactページ----------------------- */
+
 /* お問い合わせ */
 .contact-box h1 {
     font-size: 2rem;
